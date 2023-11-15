@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26440E47-D0B7-4C37-ADC9-4BD1FB16391B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hospital</RootNamespace>
+    <AssemblyName>hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="business.cs" />
+    <Compile Include="Reports\ReportBimar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBimar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="first.cs" />
+    <Compile Include="gozaresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gozaresh.Designer.cs">
+      <DependentUpon>gozaresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hazf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hazf.Designer.cs">
+      <DependentUpon>hazf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>log in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maly.Designer.cs">
+      <DependentUpon>maly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paziresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paziresh.Designer.cs">
+      <DependentUpon>paziresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="new user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new user.Designer.cs">
+      <DependentUpon>new user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sabt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sabt.Designer.cs">
+      <DependentUpon>sabt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="second.cs" />
+    <Compile Include="viraesh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viraesh.Designer.cs">
+      <DependentUpon>viraesh.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportBimar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBimar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gozaresh.resx">
+      <DependentUpon>gozaresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hazf.resx">
+      <DependentUpon>hazf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log in.resx">
+      <DependentUpon>log in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maly.resx">
+      <DependentUpon>maly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new user.resx">
+      <DependentUpon>new user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paziresh.resx">
+      <DependentUpon>paziresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sabt.resx">
+      <DependentUpon>sabt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viraesh.resx">
+      <DependentUpon>viraesh.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1301218202_application-pgp-signature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checks1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coint01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %28309%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %28323%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1301218372_exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jbhsegyrf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
